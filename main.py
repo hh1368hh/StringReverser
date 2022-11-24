@@ -18,5 +18,7 @@ elif method=="builtin":
 elif method=="forreverse":
     out=SR.forreverse(STRI=STRI)
 
+elif method=="stringmethod":
+    out=SR.forreverse(STRI=STRI)
 
 print(f'the reversed string is {out}')
