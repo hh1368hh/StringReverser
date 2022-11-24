@@ -12,5 +12,8 @@ STRI=str(input("Enter the String\n"))
 if method=="pythonic":
     out=SR.pythonic(STRI=STRI)
 
+elif method=="builtin":
+    out=SR.builtin(STRI=STRI)
 
-print(f'the reversed of the entered string is {out}')
+
+print(f'the reversed string is {out}')
