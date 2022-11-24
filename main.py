@@ -4,9 +4,9 @@ import sys
 
 SR=StrReverser()
 
-method =str(input("Choose the Method\n"))
+method =str(input("\nChoose the Method\n"))
 
-STRI=str(input("Enter the String\n"))
+STRI=str(input("\nEnter the String\n"))
 
 
 if method=="pythonic":
@@ -14,6 +14,9 @@ if method=="pythonic":
 
 elif method=="builtin":
     out=SR.builtin(STRI=STRI)
+
+elif method=="forreverse":
+    out=SR.forreverse(STRI=STRI)
 
 
 print(f'the reversed string is {out}')

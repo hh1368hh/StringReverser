@@ -6,6 +6,7 @@ class StrReverser():
         print("Availale Methods are:\n")
         print("1) pythonic")
         print("2) builtin")
+        print("3) forreverse")
 
     def pythonic(self,STRI=None):
 
@@ -23,3 +24,14 @@ class StrReverser():
             return
         
         return "".join(reversed(STRI))
+    
+    def forreverse (self, STRI=None):
+
+        if STRI is None:
+            print("Please enter a valid string")
+            return
+        out=''
+        for S in STRI:
+            out = S + out
+        
+        return out 
