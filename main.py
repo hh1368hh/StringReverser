@@ -1,6 +1,10 @@
 from stringreversepack import StrReverser
 import argparse
-import sys
+
+
+parser = argparse.ArgumentParser(description='A code for reversing strings',  
+                                     epilog="choose a method from the list and enter the string you want to reverse")
+args = parser.parse_args()
 
 SR=StrReverser()
 
@@ -20,5 +24,11 @@ elif method=="forreverse":
 
 elif method=="stringmethod":
     out=SR.forreverse(STRI=STRI)
+
+elif method=="recursionreverse":
+    out=SR.recursionreverse(STRI=STRI)
+
+else:
+    print("Choose a valid method or use -h for more info")  
 
 print(f'the reversed string is {out}')

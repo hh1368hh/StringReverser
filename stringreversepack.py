@@ -3,11 +3,12 @@
 class StrReverser():
 
     def __init__(self):
-        print("Availale Methods are:\n")
+        print("Available Methods are:\n")
         print("1) pythonic")
         print("2) builtin")
         print("3) forreverse")
         print("4) stringmethod")
+        print("5) recursionreverse")
 
     def pythonic(self,STRI=None):
 
@@ -44,3 +45,9 @@ class StrReverser():
             return
     
         return str(STRI).reverse()
+    
+    def recursionreverse(self, STRI=None):
+        if len(STRI) == 0:
+            return STRI
+        else:
+            return self.recursionreverse(STRI[1:]) + STRI[0]
