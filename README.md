@@ -14,7 +14,8 @@ or puthon main.py -h
 for more info about the function
 
 
-Version Log
+Version Log:
+
 V1.0:
 Pythonic implementation of string reverser
 
